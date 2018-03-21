@@ -20,5 +20,7 @@ echo "PAY="$PAY"" >> pay.sh
 echo "ADDR="$ADDRESS"" >> pay.sh
 echo "USER="$USER"" >> pay.sh
 
+sudo mv pay.sh /etc/cron.hourly/
+
 echo ""
 echo "If you want to remove this autopay, run: sudo bash stopautopay.sh"
