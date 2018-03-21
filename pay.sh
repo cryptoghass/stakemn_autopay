@@ -3,7 +3,7 @@
 echo "Running autopay check"
 sleep 1
 INITIAL=77777
-CURRENT=$(./staked getbalance)
+CURRENT=$(/home/$USER/stake/src/staked getbalance)
 PROFIT=$((CURRENT-INITIAL-SAFE))
 SAFE=1
 
