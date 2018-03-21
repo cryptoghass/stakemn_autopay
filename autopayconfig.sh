@@ -7,6 +7,8 @@ echo ""
 echo "Paste your withdrawal address using the keys, Shift+Insert"
 echo "Make sure there are no leading or trailing spaces!"
 
+echo "Please enter your username that you created previously when installing the script: "
+read USER
 echo "Please enter the number of coins you want to automagically withdraw (no commas or periods): "
 read PAY
 
@@ -16,6 +18,7 @@ read ADDRESS
 
 echo "PAY="$PAY"" >> pay.sh
 echo "ADDR="$ADDRESS"" >> pay.sh
+echo "USER="$USER"" >> pay.sh
 
 echo ""
 echo "If you want to remove this autopay, run: sudo bash stopautopay.sh"
